@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Draw a point (1)</title>
+    </head>
+
+    <body onload="main()">
+        <canvas id="webgl" width="400" height="400">
+        </canvas>
+        <strong>Shoegaze Cat</strong>
+        <div>
+            <div id="outputDiv">Initial content</div>
+
+            <div>
+                <strong>Animation</strong>
+                <em>to speed it up shift click on the picture... (must click play first)</em>
+
+                <div class="onoff">
+                    <button id="on">Play</button>
+                    <button id="off">Pause</button>
+                </div>
+                <strong>Have Sound On...</strong>
+            </div>
+
+
+            <div style="display: flex; gap: 10px; justify-content: space-between;">
+                <div>
+                    <label class="slider_label" for="angle_slider">Angle</label>
+                    <input type="range" id="angle_slider" min="0" max="360" value="5" class="slider-input">
+                </div>
+                <div>
+                    <label class="slider_label" for="angle_slider">Shoulder Angle</label>
+                    <input type="range" id="shoulder" min="0" max="50" value="3" class="slider-input">
+                </div>
+                <div>
+                    <label class="slider_label" for="angle_slider">Arm Angle</label>
+                    <input type="range" id="arm" min="0" max="20" value="2" class="slider-input">
+                </div>
+                <div>
+                    <label class="slider_label" for="angle_slider">Forearm Angle</label>
+                    <input type="range" id="forearm" min="-40" max="40" value="3" class="slider-input">
+                </div>
+                <div>
+                    <label class="slider_label" for="angle_slider"> Hand Angle</label>
+                    <input type="range" id="hand" min="-35" max="35" value="3" class="slider-input">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="src/blockyAnimal/lib/webgl-utils.js"></script>
+        <script src="src/blockyAnimal/lib/webgl-debug.js"></script> 
+        <script src="src/blockyAnimal/blockAnimal.js"></script>
+        <script src="src/blockyAnimal/lib/cuon-utils.js"></script>
+        <script src="src/blockyAnimal/lib/cuon-matrix.js"></script>
+        <script src="src/blockyAnimal/triangle.js"></script>
+        <script src="src/blockyAnimal/circle.js"></script>
+        <script src="src/blockyAnimal/point.js"></script>
+        <script src="src/blockyAnimal/cube.js"></script>
+        <script src="src/blockyAnimal/pyramid.js"></script>
+        <!-- <script src="../asgn1/asgn1.js"></script> -->
+    </body>
+</html>
