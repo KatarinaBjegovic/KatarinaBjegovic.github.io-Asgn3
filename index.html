@@ -2,25 +2,24 @@
  <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Draw a point (1)</title>
+        <title>World Asgn 3</title>
     </head>
 
     <body onload="main()">
         <canvas id="webgl" width="400" height="400">
         </canvas>
-        <strong>Shoegaze Cat</strong>
+        <strong>Bugs World</strong>
         <div>
             <div id="outputDiv">Initial content</div>
+            
+            <div style="text-align: center; margin-top: 10px;">
+                <p>Youre a little caterpillar... Eat grass to grow!</p>
+            </div>
 
-            <div>
-                <strong>Animation</strong>
-                <em>to speed it up shift click on the picture... (must click play first)</em>
-
-                <div class="onoff">
-                    <button id="on">Play</button>
-                    <button id="off">Pause</button>
-                </div>
-                <strong>Have Sound On...</strong>
+            <!-- Add Block and Delete Block Buttons -->
+            <div style="margin-top: 20px; display: flex; gap: 10px;">
+            <button id="addBlockButton">Plant Grass</button>
+            <button id="deleteBlockButton">Eat Grass</button>
             </div>
 
 
@@ -29,37 +28,30 @@
                     <label class="slider_label" for="angle_slider">Angle</label>
                     <input type="range" id="angle_slider" min="0" max="360" value="5" class="slider-input">
                 </div>
-                <div>
-                    <label class="slider_label" for="angle_slider">Shoulder Angle</label>
-                    <input type="range" id="shoulder" min="0" max="50" value="3" class="slider-input">
-                </div>
-                <div>
-                    <label class="slider_label" for="angle_slider">Arm Angle</label>
-                    <input type="range" id="arm" min="0" max="20" value="2" class="slider-input">
-                </div>
-                <div>
-                    <label class="slider_label" for="angle_slider">Forearm Angle</label>
-                    <input type="range" id="forearm" min="-40" max="40" value="3" class="slider-input">
-                </div>
-                <div>
-                    <label class="slider_label" for="angle_slider"> Hand Angle</label>
-                    <input type="range" id="hand" min="-35" max="35" value="3" class="slider-input">
-                </div>
             </div>
+
+            <div style="position: absolute; bottom: 10px; width: 100%; text-align: center; background: rgba(255, 255, 255, 0.8); padding: 10px;">
+                <p><strong>Notes for the Grader:</strong></p>
+                <p>Game Concept: Eat the grass as a bug and grow! (Perspective becomes taller)</p>
+                <p>Small note: You have to be right against the grass to delete it. You can 'plant' a blade of grass the same way, but it is a little difficult to see.</p>
+            </div>
+            
+            
         </div>
     </div>
 
-
         <script src="src/lib/webgl-utils.js"></script>
-        <script src="src/lib/webgl-debug.js"></script> 
+        <script src="src/lib/webgl-debug.js"></script>
+        <script src="src/lib/cuon-matrix.js"></script>
+        <script src="src/Camera.js"></script> 
         <script src="src/blockAnimal.js"></script>
         <script src="src/lib/cuon-utils.js"></script>
-        <script src="src/lib/cuon-matrix.js"></script>
         <script src="src/triangle.js"></script>
         <script src="src/circle.js"></script>
         <script src="src/point.js"></script>
         <script src="src/cube.js"></script>
         <script src="src/pyramid.js"></script>
-        <!-- <script src="../asgn1/asgn1.js"></script> -->
     </body>
 </html>
+
+
